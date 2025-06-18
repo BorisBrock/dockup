@@ -1,8 +1,6 @@
-version: "3.8"
-
 services:
-  image-inspector:
-    build: .
+  dockup:
+    image: borisbrock/dockup:0.0.2
     container_name: dockup
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
